@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+body {
+    font-family: 'Indie Flower', cursive;
+    background-color: #f5f5f5;
+}
+
+.post-frame {
+    color: #555;
+    border: 1px solid #dedede;
+    background-color: #eaeaea;
+    margin-top: 3px;
+}
+
+.post-frame h3 {
+    list-style: none;
+    border-bottom: 1px dotted #ccc;
+    text-indent: 25px;
+    height: auto;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.blog-anchor {
+    cursor: pointer;
+}

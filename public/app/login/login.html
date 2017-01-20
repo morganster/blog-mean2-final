@@ -1,0 +1,20 @@
+<div class="row">
+
+    <div class="col-md-4 col-md-offset-4">
+        <form [formGroup]="loginForm" (ngSubmit)="login($event)">
+            <p class="text-center">
+                <label for="username" class="sr-only">Username</label>
+                <input formControlName="username" type="text" id="username" placeholder="Username" class="form-control" name="username" required>
+            </p>
+            <p class="text-center">
+                <label for="password" class="sr-only">password</label>
+                <input formControlName="password" type="password" id="password" class="form-control" placeholder="Password" name="password" required>
+            </p>
+            <p class="text-right">
+                <input type="submit" class="btn btn-block" value="ok">
+
+            </p>
+            <p>{{errorMessage}}</p>
+        </form>
+    </div>
+</div>

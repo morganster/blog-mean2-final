@@ -1,0 +1,20 @@
+<div class="row">
+
+    <div class="col-md-4 col-md-offset-4">
+        <form [formGroup]="postForm" (ngSubmit)="createPost($event)">
+            <p class="text-center">
+                <label for="title" class="sr-only">Title</label>
+                <input formControlName="title" type="text" id="title" placeholder="Please name your post" class="form-control" name="title" required>
+            </p>
+            <p class="text-center">
+                <label for="body" class="sr-only">Content</label>
+                <textarea rows="10" formControlName="body" type="text" id="body" class="form-control" placeholder="Write something :D" name="body" required></textarea>
+            </p>
+            <p class="text-right">
+                <input type="submit" class="btn btn-block" value="Publish">
+
+            </p>
+            <p class="text-center text-danger">{{errorMessage}}</p>
+        </form>
+    </div>
+</div>
